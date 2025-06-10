@@ -1,0 +1,11 @@
+[build]
+  command = "pnpm build" # or "pnpm build" or "yarn build" depending on your package manager
+  publish = ".next"
+
+[build.environment]
+  # Set any environment variables needed during build time
+  # NODE_VERSION = "18" # Example: Specify Node.js version
+
+[[plugins]]
+  # Essential Next.js plugin for Netlify
+  package = "@netlify/plugin-nextjs"
